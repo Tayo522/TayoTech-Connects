@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TayoTech Connects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .header {
+      background-color: #1877f2;
+      color: white;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header h1 {
+      font-size: 26px;
+      margin: 5px 0;
+    }
+
+    .bright-color {
+      color: #ffcc00; /* Bright golden yellow for TayoTech in header */
+      font-weight: bold;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .login-form input,
+    .login-form button {
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    .login-form input {
+      border: 1px solid #dddfe2;
+    }
+
+    .login-form button {
+      background-color: #42b72a;
+      color: white;
+      cursor: pointer;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+    }
+
+    .left {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .left h2 {
+      font-size: 22px;
+      color: #1c1e21;
+    }
+
+    .right {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .right input {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .right button {
+      width: 100%;
+      background-color: #1877f2;
+      color: white;
+      padding: 12px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .right .create-btn {
+      background-color: #42b72a;
+      margin-top: 15px;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 50px 10px 20px;
+      color: #65676b;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #385898;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .login-form {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: none;
+      }
+
+      .login-form input {
+        flex: 1;
+        max-width: 150px;
+      }
+
+      .login-form button {
+        max-width: 100px;
+      }
+
+      .main {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .left {
+        flex: 1;
+        text-align: left;
+        max-width: 500px;
+        padding-right: 20px;
+      }
+
+      .left h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1><span class="bright-color">TayoTech</span> Connects</h1>
+    <form class="login-form">
+      <input type="text" placeholder="Email or Phone" />
+      <input type="password" placeholder="Password" />
+      <button type="button" onclick="alert('Login pressed')">Log In</button>
+    </form>
+  </div>
+
+  <div class="main">
+    <div class="left">
+      <h2>Connect with friends and the world around you on TayoTech Connects.</h2>
+    </div>
+    <div class="right">
+      <input type="text" placeholder="Full Name" />
+      <input type="text" placeholder="Email or Phone" />
+      <input type="password" placeholder="New Password" />
+      <button>Create New Account</button>
+      <button class="create-btn" onclick="alert('Sign Up clicked')">Sign Up</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>
+      TayoTech Connects © 2025 —
+      <a href="#">About</a>
+      <a href="#">Help</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </p>
+  </div>
+
+</body>
+</html>
